@@ -32,9 +32,9 @@ app.get('/generic', (req, res) => {
     })
 })
 
-app.get('*', (req, res) => {
-    res.sendFile(__dirname + '/public/404.html') // Asi debe construirse un path absoluto para que sea reconocido en el navegador
-})
+// app.get('*', (req, res) => {
+//     res.sendFile(__dirname + '/public/404.html') // Asi debe construirse un path absoluto para que sea reconocido en el navegador
+// })
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
